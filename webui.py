@@ -284,7 +284,7 @@ def webui():
 
         modules.script_callbacks.app_started_callback(shared.demo, app)
         startup_timer.record("scripts app_started_callback")
-
+        print("#### App Started ####",flush=True)
         print(f"Startup time: {startup_timer.summary()}.")
 
         wait_on_server(shared.demo)

@@ -51,17 +51,17 @@ echo "Setting up ebsynth utility"
 
 git clone -b feature/api https://github.com/mithyalabs/ebsynth_utility ./extensions/ebsynth_utility
 
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
-sudo dpkg -i cuda-keyring_1.0-1_all.deb
-sudo apt-get update
-sudo apt-get -y install cuda
+sudo apt install build-essential net-tools -y
 
-sudo apt install nvidia-cuda-toolkit
+wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda_12.0.0_525.60.13_linux.run
+sudo sh cuda_12.0.0_525.60.13_linux.run --silent
+
+sudo apt install nvidia-cuda-toolkit -y
 
 # Download ebsynth
-mkdir /home/ubuntu/bin
-wget https://pub-706bf4a189d94a6b8bfe844e4aaf385a.r2.dev/ebsynth_linux_cuda -O /home/ubuntu/bin/ebsynth
+mkdir /home/ubuntu/data/bin
+wget https://pub-706bf4a189d94a6b8bfe844e4aaf385a.r2.dev/ebsynth_linux_cuda -O /home/ubuntu/data/bin/ebsynth
 chmod +x /home/ubuntu/bin/ebsynth
 
-sudo apt-get install ffmpeg
+sudo apt install ffmpeg -y
 

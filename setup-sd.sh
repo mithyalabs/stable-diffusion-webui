@@ -63,4 +63,5 @@ mkdir /home/ubuntu/bin
 wget https://pub-706bf4a189d94a6b8bfe844e4aaf385a.r2.dev/ebsynth_linux_cuda -O /home/ubuntu/bin/ebsynth
 chmod +x /home/ubuntu/bin/ebsynth
 
+sudo apt-get install ffmpeg
 

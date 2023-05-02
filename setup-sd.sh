@@ -28,14 +28,14 @@ sudo apt-get update -y
 # sudo sed -i 's/try_files $uri $uri\/ =404;/proxy_pass http:\/\/localhost:7860;/' /etc/nginx/sites-available/default
 
 
-sudo apt install python3-venv build-essential net-tools -y
+sudo apt-get install python3-venv build-essential net-tools -y
 
 wget https://developer.download.nvidia.com/compute/cuda/12.0.0/local_installers/cuda_12.0.0_525.60.13_linux.run
 sudo sh cuda_12.0.0_525.60.13_linux.run --silent
 
-sudo apt install nvidia-cuda-toolkit -y
+sudo apt-get install nvidia-cuda-toolkit -y
 
-sudo apt install ffmpeg -y
+sudo apt-get install ffmpeg -y
 
 
 # Download ebsynth

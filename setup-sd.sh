@@ -70,6 +70,7 @@ sudo apt-get install nginx -y
 
 # sudo chown root /home/ubuntu/nginx.conf
 sudo mv ./nginx.conf /etc/nginx/sites-available/default -f
+sudo chown root /etc/nginx/sites-available/default
 sudo service nginx reload
 
 echo "### SETUP COMPLETE ###"

@@ -41,16 +41,16 @@ sudo apt-get install ffmpeg -y
 # Download ebsynth
 mkdir /home/ubuntu/data/bin
 wget https://pub-706bf4a189d94a6b8bfe844e4aaf385a.r2.dev/ebsynth_linux_cuda -O /home/ubuntu/data/bin/ebsynth
-chmod +x /home/ubuntu/bin/ebsynth
+chmod +x /home/ubuntu/data/bin/ebsynth
 
 
 echo "Installing controlnet extension"
 
 git clone https://github.com/Mikubill/sd-webui-controlnet.git ./extensions/sd-webui-controlnet
 
-echo "Downloading Canny model"
-wget https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth -P ./models/ControlNet/
-wget https://huggingface.co/lllyasviel/ControlNet-v1-1/raw/main/control_v11p_sd15_canny.yaml -P ./models/ControlNet/
+# echo "Downloading Canny model"
+# wget https://huggingface.co/lllyasviel/ControlNet-v1-1/resolve/main/control_v11p_sd15_canny.pth -P ./models/ControlNet/
+# wget https://huggingface.co/lllyasviel/ControlNet-v1-1/raw/main/control_v11p_sd15_canny.yaml -P ./models/ControlNet/
 
 
 echo "Setting up ebsynth utility"
